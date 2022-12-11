@@ -1,0 +1,449 @@
+
+/* top elements */
+* { 
+	padding: 0; margin: 0;
+}
+body {
+	margin: 0; 	padding: 0;
+	font: normal .70em/1.6em Verdana, Tahoma, sans-serif;
+	font-family: monospace, serif;
+	color: #BDBDBD;
+	background: #000;
+	text-align: center;	
+}
+/* links */
+a {
+	color: #FFF;
+	background-color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(238, 255, 0);
+	background-color: inherit;	
+	text-decoration: underline;
+}
+
+/* headers */
+h1, h2, h3 {
+	font: normal 1.3em 'Trebuchet MS', Arial, Sans-serif;
+	font-family: monospace;
+	color: #FFF;	
+	
+}
+h1 { font-size: 1.6em; } 
+h2 { font-size: 1.4em; text-transform:uppercase; font-weight: bold;}
+h3 { font-size: 1.3em; font-weight: bold; }
+
+p, h1, h2, h3 {
+	margin: 0;
+	padding: 10px 15px;
+}
+
+ul, ol {
+	margin: 10px 30px;
+	padding: 0 15px;
+	color: #FFF;
+}
+
+/* images */
+img {
+	border: 1px solid #555;
+	max-width: 100%;
+	max-height: 100%;
+}
+img.no-border {
+	border: none;
+}
+img.float-right {
+  margin: 5px 0px 5px 15px;  
+}
+img.float-left {
+  margin: 5px 15px 5px 0px;
+}
+a img {  
+  border: 3px solid #555;
+}
+a:hover img {  
+  border: 3px solid #CCC !important; /* IE fix*/
+  border: 3px solid #555;
+}
+
+/* ascii art */
+.ascii-art {
+	font-size: 10px;
+	font-family: monospace;
+	white-space: pre;
+	line-height: 1;
+	display: inline-block;
+	white-space: pre-wrap;
+	word-break: break-word;
+	margin: 4 0;
+	color: #f1f1f1;
+	
+}
+
+code {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace;
+  /* white-space: pre; */
+  background: #0A1646;  
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+blockquote {
+	margin: 15px;
+ 	padding: 0 0 0 20px;  	
+  	background: #0A1646;	
+	font: bold 1.3em/1.5em 'Trebuchet MS', Sans-serif;   
+}
+
+/* form elements */
+form {
+	margin: 10px 15px; 
+	padding: 0;
+	background: #0A1646;	
+}
+label {
+	display:block;
+	font-weight:bold;
+	margin:5px 0;
+}
+input {
+	padding: 2px;
+	border:1px solid #eee;
+	font: normal 1em Verdana, sans-serif;
+	color:#777;
+}
+textarea {
+	width: 250px;
+	padding:2px;
+	font: normal 1em Verdana, sans-serif;
+	border:1px solid #eee;
+	height:100px;
+	display:block;
+	color:#777;
+}
+input.button { 
+	margin: 0; 
+	font: bold 1em Arial, Sans-serif; 
+	border: 1px solid #CCC;
+	background: #FFF; 
+	padding: 2px 3px; 
+	color: #333;	
+}
+
+/* search form */
+.searchform form{
+	background-color: transparent;
+	border: none;
+	margin: 0; padding: 0;
+}
+.searchform input.textbox { 
+	margin: 0; 
+	width: 145px;
+	border: 1px solid #777; 
+	background: #FFF;
+	color: #333; 
+	height: 14px;
+	vertical-align: top;
+}
+.searchform input.button { 
+	margin: 0; 
+	padding: 2px 3px; 
+	font: bold 12px Arial, Sans-serif; 
+	background: #FFF;
+	border: 1px solid #f2f2f2; 
+	color: #333;	
+	width: 65px;
+	vertical-align: top;
+}
+
+/***********************
+	  LAYOUT
+************************/
+#wrap {
+	background:url(spacebg.jpg);
+	margin: 20px auto 0 auto;	
+	text-align: left;		
+  	border-color: #444;
+	border-style: solid;
+	border-width: 1px 1px 5px 1px;	
+}	
+#wrap, #footer-wrap {
+	width: 84%;
+}
+
+/* header */
+#header {
+	position: relative;
+	height: 150px;	
+	border-bottom: 5px solid #444;		
+}
+#header a:hover {
+  color: rgb(238, 255, 0);
+    
+}
+#header h1#logo {
+	position: absolute;
+	top: 5px; left: 20px;
+	margin: 0; padding: 0;
+	font: bolder 50px 'Trebuchet MS', Arial, Sans-serif;
+	letter-spacing: -2px;	
+}
+#header h2#slogan {
+	position: absolute;
+	top: 50px; left: 65px;
+	color: #FFF;
+	text-indent: 0px;
+	font: bold 12px Tahoma, 'Trebuchet MS', Sans-serif; 
+	text-transform: none;	
+}
+
+/* content-wrap */
+#content-wrap {
+	clear: both;
+	margin: 0; padding: 0;			
+}
+
+/* box */
+.box {
+	margin: 10px 15px;			
+	border: 1px solid #0A1646;	 	
+}
+
+/* main */
+#main {
+	margin: 0 0 0 270px;		
+	padding-top: 20px;
+}
+#main .box {
+	margin-left: 0;
+}
+
+/* sidebar */
+#sidebar {
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding-top: 20px; 	
+}
+#sidebar ul.sidemenu {
+	margin: 0 0 0 15px; padding: 0;	
+	background: #000;		
+	border-top: 5px solid #000;
+}
+#sidebar ul.sidemenu li {
+	display: inline;
+	list-style: none;		
+}
+#sidebar ul.sidemenu li a {
+  display: block;	
+  padding: 5px 10px 5px 15px;   
+  text-decoration: none;
+	font-size: 16px;
+  color: #CCC;
+  font-weight: bold;  
+} 
+#sidebar ul.sidemenu li a:hover {
+  color: rgb(238, 255, 0);
+    
+}
+
+/* Footer */
+#footer-wrap { 
+	clear: both; 
+	color: #FFF; 
+	background: #000; 
+	margin: 0 auto; 
+	padding: 0; 
+	font-size: 88%;  		
+}
+#footer-wrap a { 
+	text-decoration: none; 
+	font-weight: bold;	
+	color: #FFF;
+}
+#footer-wrap .footer-left{
+	float: left;
+	width: 65%;	
+	padding-bottom: 20px;	
+}
+#footer-wrap .footer-right{
+	float: right;
+	width: 30%;			
+	padding-bottom: 20px;
+}
+
+/* menu tabs */
+#header ul {
+	position: absolute;
+	top: 20px; right: 20px;
+	margin:0; padding: 0;
+   list-style:none;
+	font: bold 1.3em  'Trebuchet MS', Tahoma, verdana,  sans-serif;	
+	height: 2.3em;
+}
+#header li {
+   display:inline;
+   margin:0; padding:0;
+}
+#header a {
+	float: left;
+   margin:0;
+   padding:3px 10px 2px 10px;
+   text-decoration:none;	
+	color: #CCC;
+}
+#header a:hover {
+	border-top: 5px solid #CCC;	
+}
+#header #current a {
+   color: #FFF;
+	border-top: 5px solid #FFF;
+}
+/* end menu tabs */
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right {	float: right; }
+.align-left  {	text-align: left; }
+.align-right {	text-align: right; }
+
+/* additional classes */
+.clear {	clear: both; }
+.gray  {	color: #A0A0A0; }
+.comments { 
+	text-align: right; 
+	padding: 7px 15px;
+	margin: 20px 15px 15px 15px;
+	background: #0A1646;	 
+}
+
+.spotify-embeds {
+	display: flex;
+  align-items: center;
+	width: 100%;
+	padding: 50px;
+	border-color: #0A1646;
+	border-width: 1px;
+}
+
+/*
+ accordian collapsible i got from codeconvey.com
+*/
+		.accordion > input[name="collapse"] {
+			display: none;
+			
+			/*position: absolute;
+			left: -100vw;*/
+		}
+
+		.accordion label,
+		.accordion .content{
+		max-width: 620px;
+			margin: 0 auto;
+			border: 1px solid rgb(12, 48, 125);
+		}
+
+
+		.accordion .content {
+			background: #000;
+			overflow: hidden;
+			overflow-y: scroll;
+			height: 0;
+			transition: 0.5s;
+			box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+
+		.accordion > input[name="collapse"]:checked ~ .content {
+			height: 380px;
+			transition: height 0.5s;
+		}
+
+		.accordion label {
+			display: block;
+		
+		}
+
+		/* For Desktop */
+		@media only screen and (min-width: 620px){
+
+
+		.accordion > input[name="collapse"]:checked ~ .content {
+			height: 320px;
+		}
+
+		}
+
+		.accordion {
+			margin-bottom: 1em;
+		}
+
+		.accordion > input[name="collapse"]:checked ~ .content {
+			border-top: 0;
+			transition: 0.3s;
+		}
+
+		.accordion .handle {
+			margin: 0;
+			font-size: 16px;
+			
+		}
+
+		.accordion label {
+			color: #fff;
+			cursor: pointer;
+			font-weight: normal;
+			padding: 10px;
+			background: #000;
+			user-select: none;
+			
+		}
+
+
+
+		.accordion .handle label:before {
+			font-family: FontAwesome;
+			content: "\f107";
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 1em;
+			line-height: 1.556em;
+			vertical-align: middle;
+			transition: 0.4s;
+			
+		}
+
+		.accordion > input[name="collapse"]:checked ~ .handle label:before {
+				transform: rotate(180deg);
+				transform-origin: center;
+				transition: 0.4s;
+		}
+
+
+/* scroll bar */
+	/* width */
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: #f1f1f1; 
+	}
+	
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #888; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555; 
+	}
