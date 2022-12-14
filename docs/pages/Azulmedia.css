@@ -229,9 +229,23 @@ input.button {
 	border: 1px solid #0A1646;  
   }
 
+  .parent {
+	border: 1px solid #0A1646;
+	margin: 10px;
+	padding: 2px 2px;
+	text-align: left;
+  }
+  .child {
+	display: inline-block;
+	border: 1px solid #0A1646;
+	padding: 5px 10px 5px 15px;
+	vertical-align: left;
+  }
+  
+
 /* main */
 #main {
-	margin: 0 0 0 270px;		
+	margin: 0 0 0 170px;		
 	padding-top: 20px;
 }
 #main .box {
@@ -241,13 +255,15 @@ input.button {
 /* sidebar */
 #sidebar {
 	float: left;
-	width: 200px;
+	width: 170px;
 	margin: 0;
-	padding-top: 20px; 	
+	padding-top: 10px; 	
+	height: 100%;
 }
 #sidebar ul.sidemenu {
-	margin: 0 0 0 15px; padding: 0;	
-	background: #000;		
+	margin: 0 0 0 15px; 
+	padding: 0;	
+	background: none;		
 	border-top: 5px solid #000;
 }
 #sidebar ul.sidemenu li {
