@@ -63,22 +63,35 @@
           <div class="box" style="height:300px;">
             <!--Gallery Side bar-->
 <div id="sidebar">
-    <ul class="sidemenu">
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 01</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 02</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 03</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 04</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 05</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 06</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 07</a></li>
-        <li><a href="javascript:void(0);" onclick="changeImage();">PHOTO 08</a></li> 
-        <li><input type="button" onclick="changeImage()" value="Change"/> </li>    
+    <ul id = "gallery" class="sidemenu">
+        <li><a id = "changephoto1">PHOTO 01</a></li>
+        <li><a id = "changephoto2">PHOTO 02</a></li>
+        <li><a id = "changephoto3">PHOTO 03</a></li>
+        <li><a id = "changephoto4">PHOTO 04</a></li>
+        <li><a id = "changephoto5">PHOTO 05</a></li>
+        <li><a id = "changephoto6">PHOTO 06</a></li>
+        <li><a id = "changephoto7">PHOTO 07</a></li>
+        <li><a id = "changephoto8">PHOTO 08</a></li> 
+
     </ul>
     </div>
     <script>
-      function changeImage() {
-  document.getElementById("imgid").src="../../images/pets/asciiMura.png";
-}
+      function getEventTarget(e) {
+          e = e || window.event;
+          return e.target || e.srcElement; 
+      }
+
+      var ul = document.getElementById('gallery');
+      ul.onclick = function(event) {
+          var target = getEventTarget(event);
+          console.log(target.id);
+
+          document.getElementById('imgid').src=`../../images/pets/${target.id}.png`;
+          
+      };
+      //function changeImage(path) {
+      //  document.getElementById("imgid").src=`../../images/pets/${path}.png`;
+      //}
     </script>
             <h1 style="padding-top:20px;padding-bottom: 10px;font-size: 16px;font-weight: bold;">PROJECT <span class="gray">1</span></h1>
             <img id="imgid" width="200" height="200" src="../../images/djmura.png" id="image" />
