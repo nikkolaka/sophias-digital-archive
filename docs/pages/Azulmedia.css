@@ -10,6 +10,7 @@ body {
 	color: #BDBDBD;
 	background: #000;
 	text-align: center;	
+	min-width: 630px ;
 }
 /* links */
 a {
@@ -22,6 +23,7 @@ a:hover {
 	color: rgb(238, 255, 0);
 	background-color: inherit;	
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 /* headers */
@@ -250,6 +252,45 @@ input.button {
 }
 #main .box {
 	margin-left: 0;
+}
+/* gallery */
+
+.gallerybar {
+	float: left;
+	width: 140px;
+	margin: 0;
+	padding-top: 10px; 	
+	height: 100%;
+}
+.gallerybar ul.sidemenu {
+	margin: 0 0 0 15px; 
+	padding: 0;	
+	background: none;		
+	border-top: 5px solid #000;
+}
+.gallerybar ul.sidemenu li {
+	display: inline;
+	list-style: none;		
+}
+.gallerybar ul.sidemenu li a {
+  display: block;	
+  padding: 5px 10px 5px 15px;   
+  text-decoration: none;
+	font-size: 16px;
+  color: #CCC;
+  font-weight: bold;  
+} 
+.gallerybar ul.sidemenu li a:hover {
+  color: rgb(238, 255, 0);
+    
+}
+.galleryimg {
+	position:static;
+	width:auto;
+	max-width: 200px;
+	height:auto;
+	border: none;
+	border-radius: 8px;
 }
 
 /* sidebar */
