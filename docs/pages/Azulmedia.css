@@ -85,6 +85,14 @@ a:hover img {
 	
 }
 
+iframe {
+	border-radius:10px;
+	width: 90%;
+	height:380; 
+	padding: 10px 15px;
+	text-align: center;
+}
+
 code {
   margin: 5px 0;
   padding: 10px;
